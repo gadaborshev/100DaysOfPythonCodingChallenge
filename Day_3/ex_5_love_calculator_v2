@@ -1,0 +1,32 @@
+# 🚨 Don't change the code below 👇
+# print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+combined_string = name1 + name2 # конкатенирую две строки-имени
+lower_case_string = combined_string.lower() # перевожу полученную строку в нижний регистр
+
+t = lower_case_string.count('t') # подсчитываю, сколько раз буква "t" встречается в моей строке
+r = lower_case_string.count('r') # подсчитываю, сколько раз буква "r" встречается в моей строке
+u = lower_case_string.count('u') # подсчитываю, сколько раз буква "u" встречается в моей строке
+e = lower_case_string.count('e') # подсчитываю, сколько раз буква "e" встречается в моей строке
+
+true = t + r + u + e
+
+l = lower_case_string.count('l') # подсчитываю, сколько раз буква "l" встречается в моей строке
+o = lower_case_string.count('o') # подсчитываю, сколько раз буква "o" встречается в моей строке
+v = lower_case_string.count('v') # подсчитываю, сколько раз буква "v" встречается в моей строке
+e = lower_case_string.count('e') # подсчитываю, сколько раз буква "e" встречается в моей строке
+
+love = l + o + v + e 
+
+score = int(str(true) + str(love)) 
+
+
+if score < 10 or score > 90:
+    print(f"Your score is {score}, you go together like coke and mentos.")
+elif score >= 40 and score <= 50:
+    print(f"Your score is {score}, you are alright together.")
+else:
+    print(f"Your score is {score}.")
