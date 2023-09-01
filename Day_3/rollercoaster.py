@@ -19,7 +19,7 @@ if height >= 120:
   wants_photo = input("Do you want a photo taken? Y or N. ")
   if wants_photo == "Y":
     bill += 3
-    if age >= 45 and age <= 55:
+    if age >= 45 and age <= 55: # This dude has a middle age crisis
       bill = 0
   
   
